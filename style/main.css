@@ -1,0 +1,196 @@
+body{
+  height: 100%;
+ overflow-x:hidden;
+ overflow-y:hidden;
+ background-color: black;
+}
+* {
+  box-sizing: border-box;
+}
+.bg-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+  background-image: url('../images/background.png');
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(6px);
+  -o-filter: blur(6px);
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+  width: 100vw;
+  height: 100vh;
+}
+.rectangle {
+  position: relative;
+  height: 400px;
+  width: 550px;
+  background-color: #fff;
+  border-radius: 25px;
+  margin: auto;
+  margin-top:20px;
+  box-shadow: 5px 8px 8px #888888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  size: inherit;
+  z-index: 2;
+}
+content{
+  background-color: #f1f1f1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.bg-danger, .bg-success {
+	padding: 0 5px;
+	font-family: "Work Sans", Arial, sans-serif;
+	font-size: 17px;
+  text-align:center;
+}
+
+a {
+	color: #EF1F2F;
+	font-family: "Work Sans", Arial, sans-serif;
+	text-decoration: none;
+}
+
+a:hover, a:active{
+  color: #a70c19;
+}
+hr {
+  border: 1px solid red;
+}
+table {
+  font-family: "Work Sans", Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+  table-layout: inherit;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  /*overflow: hidden;*/
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.sidestuff{
+  margin-top: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+
+}
+h1, h2{
+  color:black;
+  font-family: "Work Sans", Arial, sans-serif;
+}
+.panel-primary > .panel-heading {
+    color: #ffffff;
+    background-color: #aaa;
+    border-color: #ddd;
+}
+.panel-primary{
+  border-color: #ddd;
+}
+tr:nth-child(even) {background-color: white;}
+.btn-primary {
+  background-color: #EF1F2F;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  font-family: "Work Sans", Arial, sans-serif;
+  height: 50px;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #a70c19;
+}
+.btn-primary:active {
+  background-color: #770812;
+}
+.btn-primary:disabled:hover{
+  background-color: #ddd;
+}
+.btn-primary:focus{
+  background-color: #a70c19;
+}
+.rectangle > div{
+}
+input[type=text],[type=password]{
+  width:100%;
+}
+input[type=text]:focus {
+  border: 2px solid #EF1F2F;
+}
+input[type=password]:focus {
+  border: 2px solid #EF1F2F;
+}
+.card-container{
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin: auto;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important;
+  /*width: 800px;*/
+}
+.container{
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media print {
+  -webkit-transform: rotate(-90deg) scale(.68,.68); 
+    -moz-transform:rotate(-90deg) scale(.58,.58);
+  @page {size: landscape}
+}
