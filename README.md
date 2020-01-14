@@ -1,5 +1,4 @@
 # Employee-TimeSheet
-===============
 Track the hours of your employees
 [![Build Status](https://travis-ci.org/joshk326/Employee-TimeSheet.svg?branch=master)](https://travis-ci.org/joshk326/Employee-TimeSheet)
 
